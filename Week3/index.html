@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เว็บไซต์เเรกของฉัน</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th, td {
+        border: 1px solid #000;
+        padding: 6px 8px;
+        text-align: left;
+      }
+      caption {
+        caption-side: top;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+    </style>
 </head>
 <body>
-    <h1><strong><center>เว็บไซต์เเนะนำตัวเอง</center></strong></h1>
-    <p>ชื่อ-นามสกุล : นายภูมิพัฒน์ วงศ์ดาว<br>ชื่อเล่น : ทิว</p>
-    <p><em>อายุ : 20 ปี</em></p>
+    <!-- ส่วนหัวของเว็บไซต์ -->
+    <header><h1><strong><center>นายภูมิพัฒน์ วงศ์ดาว</center></strong></h1></header>
+    <!-- รูปภาพของตัวเอง -->
+    <p align="center">
+        <img src="https://scontent.fcnx4-2.fna.fbcdn.net/v/t39.30808-6/472235638_3492163737755977_5949920300833280846_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGsfX5q94FcrBtEbk5cMMYCIwVas88JFMYjBVqzzwkUxu5rIJVYqdYZHQ2JmB3Cc-nxY7Qdpz9MPFt7kJlwYCRs&_nc_ohc=lfUGr03475EQ7kNvwEXuswL&_nc_oc=Adlc16EltMqf1aP0bC8EueLioB83E4ovlCVSwFJ0dvTneI7MsB1c16C-xzX1z1CRoek7Q4Z9578LVN2-8KnJuX-g&_nc_zt=23&_nc_ht=scontent.fcnx4-2.fna&_nc_gid=3fAjtB-hpAAFZ_LS45BM3g&oh=00_Afn31MoSUFR303gclHRCbW438rLKovK7j4Rbp9VN_K3jKw&oe=693AF57C"alt="Own" width="350" height="350">
+    </p>
+    <!-- H2 ข้อมูลส่วนตัว-->
+    <main>
+        <h2>ข้อมูลส่วนตัว</h2>
+        <p>ชื่อ-นามสกุล : นายภูมิพัฒน์ วงศ์ดาว</p>
+        <!-- ส่วนของ List เมนูนำทางไปยังหัวข้อต่างๆ -->
+        <ul>
+            <li>ชื่อเล่น : ทิว</li>
+            <li>อายุ : 20 ปี</li>
+        </ul>
+    </main>
+    <!-- Form สำหรับกรอกข้อมูลจำนวน 3 ช่อง -->
+    <section>
+        <form>
+            <label>Text1</label>
+            <input type="text" name="Text1">
+            <br>
+            <label>Text2</label>
+            <input type="text" name="Text2">
+            <br>
+            <label>Text3</label>
+            <input type="text" name="Text3">
+        </form>
+    </section>
+    <!-- ตาราง table Social Media -->
+    <table>
+    <p><h2>SocialMedia</h2>
+        <tr>
+            <th rowspawn="2">ชื่อ</th>
+            <th rowspawn="2">ลิงค์</th>
+        </tr>
+        <tr>
+            <th rowspawn="2">Facebook</th>
+            <th><a href="https://www.facebook.com/phumipat.wongdaw.2024" target="_blank">ไปยัง Facebook</a></th>
+        </tr>
+    </table>
+    <!-- ส่วนของ Footer -->
+    <footer>
+        <p>ติดต่อได้ที่ : Phumipat2568@live.rmutl.ac.th
+        โทรศัพท์ : 093-1982083
+        </p>
+    </footer>
 </body>
 </html>
