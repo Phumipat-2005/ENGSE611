@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-properties</title>
+    <style>
+        .box-color {
+            width: 300px;
+            height: 120px;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .box-image {
+            width: 300px;
+            height: 300px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFz5fYgrepcP696Zm4ZtlldGLC6hEr83HUhDcUWJoyK2l-Rqp2YrkMskunDA_R5Hy-722xpQrOgG2-ZhAuOhuQ1aBRtwaf4jp3tfRNlNQKmg&s=10');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 2px solid #333;
+        }
+
+        .box-shot {
+            width: 300px;
+            height: 300px;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj-okipjMppSYiI2GUmxzU1QZjssjvBJ2l7y3tsJVsry4hs7kzYTuPPakSm7P6D9tHQic_ecdJXmmlI0UdkzwxkbFvCtfNvfZ11JHxmZ4&s=10') no-repeat center / cover;
+            border: 2px solid black;
+        }
+
+        .bg-yellow {
+            background-color: yellow;
+        }
+
+        .bg-hex {
+            background-color: #FFFF00;
+        }
+    </style>
+</head>
+<body>
+    class="box-color bg-yellow">
+        กล่องที่มีพื้นหลังสีเหลือง (ชื่อสี)
+    </div>
+    <div class="box-color bg-hex">
+        กล่องที่มีพื้นหลังสีเหลือง (#FFFF00)
+    </div>
+    <div class="box-image">
+        กล่องที่มีพื้นหลังเป็นภาพ (แสดงเต็มกล่อง)
+    </div>
+    <div class="box-shot">
+        กล่องที่มีพื้นหลังเป็นภาพ (ย่อขยายเต็มกล่อง)
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* 1. Element Selector */
+        p {
+            color: green;
+        }
+
+        /* 2. Class Selector */
+        .highlight {
+            background: yellow;
+            padding: 5px;
+        }
+
+        /* 3. ID Selector */
+        #header {
+            background: blue;
+            color: white;
+            padding: 10px;
+        }
+
+        /* 4. Pseudo-class :hover */
+        p:hover {
+            color: red;
+            background-color: #ffe5e5;
+            cursor: pointer;
+        }
+
+        /* 5. Attribute Selector [type="text"] */
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus {
+            border-color: rgb(255, 0, 128);
+            outline: none;
+            background-color: #fff0fa;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>ตัวอย่าง CSS Selectors</h1>
+
+    <!-- Element Selector -->
+     <p>
+        ข้อความนี้ถูกจัดสีด้วย Element Selector (p { Color: green; } )
+     </p>
+
+     <!-- Class Selector -->
+     <p class="highlight">
+        ข้อความนี้ถูกจัดสีด้วย Class Selector (.highlight { background: yellow; padding: 5px; } )
+     </p>
+
+     <!-- ID Selector -->
+     <div id="header">
+        หัวข้อที่ถูกจัดสีด้วย ID Selector (#header { background: blue; color: white; padding: 10px; } )
+     </div>
+
+     <h2>Pseudo-class :hover</h2>
+     <p>นำเมาส์มาวางบนข้อความนี้ดูเอฟเฟกต์</p>
+
+     <h2>Attribute Selector [type="text"]</h2>
+     <input type="text" placeholder="พิมพ์ข้อความที่นี่">
+</body>
+</html>
