@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Properties</title>
+    <style>
+    /* ---------- STYLE FOR DEMO ---------- */
+    .block-example div {
+        display: block;
+        padding: 10px;
+        margin-bottom: 5px;
+        background: #c8e6ff; /* ฟ้า */
+    }
+
+    .inline-xample span {
+        display: inline;
+        padding: 5px;
+        background: #ffc8c8; /* ชมพู */
+        margin-right: 5px;
+    }
+
+    .inline-block-example div {
+        display: inline-block;
+        width: 120px;
+        height: 40px;
+        background: #d2ffd2; /* เขียวอ่อน */
+        margin-right: 10px;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid #4caf50;
+    }
+    </style>
+</head>
+<body>
+    <h1>display: block;</h1>
+    <h5>กินพื้นที่เต็มบรรทัด เเละขึ้นบรรทัดใหม่เสมอ</h5>
+        <div class="block-example">Block 1</div>
+        <div class="block-example">Block 2</div>
+
+    <h1>display: inline;</h1>
+    <h5>อยู่ในบรรทัดเดียวกัน เเละไม่สามารถกำหนด width/height ได้</h5>
+        <div class="inline-xample">Inline 1</div>
+        <div class="inline-xample">Inline 2 Inline 2 Inline 2</div>
+        <div class="inline-xample">Inline 3</div>
+
+    <h1>display: inline-block;</h1>
+    <h5>รวมข้อดีของ inline เเละ block -> ไม่ขึ้นบรรทัดใหม่ + กำหนด width/height ได้</h5>
+        <div class="inline-block-example div">Box A</div>
+        <div class="inline-block-example div">Box B Box B</div>
+        <div class="inline-block-example div">Box C</div>
+</body>
+</html>
