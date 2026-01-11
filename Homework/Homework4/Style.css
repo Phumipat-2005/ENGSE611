@@ -5,14 +5,12 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-areas:"header aside";
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0px;
     height: 100vh;
 }
 
 .header {
-    grid-area: header;
     background-color: rgb(62, 140, 230);
     color: white; line-height: 50px; font-size: 24px; padding-left: 20px;
     display: flex;
@@ -20,16 +18,6 @@ body {
 }
 
 .aside {
-    grid-area: aside;
     background-color: #dcdddd;
     color: black; line-height: 50px; font-size: 24px; padding-left: 20px;
 }
-
-@media (max-width: 600px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "header"
-        "aside";
-        }
-    }
