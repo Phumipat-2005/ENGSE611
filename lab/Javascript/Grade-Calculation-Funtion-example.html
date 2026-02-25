@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculation Function Example</title>
+</head>
+<body>
+    <p><b>กรอกคะเเนน:</b></p>
+    <input type="Number" id="scoreInput" placeholder="0 - 100">
+    <button onclick="runGrade()">คำนวณเกรด</button><br><br>
+    <div id="outputBox">ผลลัพธ์จะปรากฏที่นี่...</div>
+
+    <script>
+        function calculateGrade(score) {
+            if (score >= 80) {
+                return "A";
+            } else if (score >= 70) {
+                return "B";
+            } else if (score >= 60) {
+                return "C";
+            } else if (score >= 50) {
+                return "D";
+            } else {
+                return "F";
+            }
+        }
+
+        function runGrade() {
+            const output = [];
+            let score = parseFloat(document.getElementById("scoreInput").value);
+
+            // ตรวจคำว่างหรือผิด
+            if (isNaN(score) || score < 0 || score > 100) {
+                output.push("กรุณากรอกคะแนนที่ถูกต้อง (0-100)");
+                document.getElementById("outputBox").innerHTML = output.join("\n");
+                return;
+            }
+
+            let grade = calculateGrade(score);
+
+            output.push("คะเเนน: " + score);
+            output.push("เกรดที่ได้: " + grade);
+
+            console.log("คะเเนน:", score);
+            console.log("เกรด:", grade);
+
+            document.getElementById("outputBox").innerHTML = output.join("\n");
+        }
+    </script>
+</body>
+</html>
