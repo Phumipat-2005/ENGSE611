@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Event_Focus and blur</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username">
+    </form>
+
+    <script>
+        const username = document.getElementById('username');
+
+        username.addEventListener('focus', function () {
+            this.style.backgroundColor = '#e3f2fd';
+        });
+
+        username.addEventListener('blur', function () {
+            this.style.backgroundColor = '';
+
+            if (this.value.trim() === '') {
+                this.style.borderColor = 'red';
+            } else {
+                this.style.borderColor = 'green';
+            }
+        });
+    </script>
+</body>
+</html>
